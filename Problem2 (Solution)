@@ -1,0 +1,16 @@
+a=eval(input())
+def file(x):
+    try:
+        for i in x:
+            if type(x[i])==type(dict()):
+                for a in x[i]:
+                    x[i+a]=x[i][a]
+                x.pop(i)
+                file(x)
+        else:
+            print(x)
+    except RuntimeError:
+         pass
+         
+            
+file(a)
