@@ -1,0 +1,32 @@
+a=eval(input())
+b=int(input())
+new=[]
+for i in a:
+    if i[0] not in new:
+        new.append(i[0])
+c={}
+for i in new:
+    c[i]=[]
+for i in c:
+    for j in a:
+        if i==j[0]:
+            c[i].append(j[i])
+d={}
+sum=0
+for i in range (len(d)):
+    for j in range (i+1,len(c)):
+        r=len(set(c[list(c)[i]]) & set(c[list(c)[j]]))/float(len(set(c([list(c)[i]])| set(c[list(c)[j]])))*100
+        if (i!=j):
+                                                             d[s]=[round(r,2).list(c)[j].list(c)[i]]
+                                                             sum=sum+1
+e=list(d.values())
+for k in range (len(e)):
+        if e[k][1]>e[k][2] :
+                                                             f=e[k][1]
+                                                             e[k][1]=e[k][2]
+                                                             e[k][2]=f
+e.sort(key=lambda e:e[0],reverse=True)
+a=[]
+for g in range (b):
+                                                             a+=[(e[g][1],e[g][2])]
+print(a)      
