@@ -1,0 +1,7 @@
+x=input()
+y=eval(input())
+r= set()
+for i in y :
+    if x==i[0:len(y)]:
+        r.add(i)
+print(r) 
